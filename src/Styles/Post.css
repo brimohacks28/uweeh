@@ -1,0 +1,113 @@
+/* General Styling */
+.post-detail-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .post-detail-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Loading State */
+  .post-detail-loading {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Post Title */
+  .post-detail-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Post Image */
+  .post-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .post-detail-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Post Content */
+  .post-detail-content {
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    word-spacing: 0.05rem;
+  }
+  
+  /* Affiliate Link */
+  .post-detail-affiliate-link {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .post-detail-affiliate-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .post-detail-container {
+      padding: 20px;
+    }
+  
+    .post-detail-title {
+      font-size: 2.2rem;
+    }
+  
+    .post-detail-content {
+      font-size: 1.1rem;
+    }
+  
+    .post-detail-affiliate-link {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

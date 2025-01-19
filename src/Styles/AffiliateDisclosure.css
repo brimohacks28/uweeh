@@ -1,0 +1,75 @@
+/* AffiliateDisclosure.css */
+
+.affiliate-disclosure {
+    max-width: 800px; /* Max width for readability */
+    margin: 20px auto; /* Center the content */
+    padding: 20px; /* Padding around the content */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
+    opacity: 0; /* Start hidden for fade-in effect */
+    transform: translateY(20px); /* Start slightly lower for slide effect */
+    animation: fadeInUp 0.5s forwards; /* Animation for appearance */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+.disclosure-header {
+    text-align: center; /* Center align header */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.disclosure-header h1 {
+    font-size: 2em; /* Larger font size for the title */
+    color: #7f8c8d; /* Accent color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.disclosure-header h1:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.disclosure-content {
+    line-height: 1.6; /* Improved line height for readability */
+    color: #333; /* Dark text color */
+}
+
+.disclosure-content p {
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.disclosure-content p:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.disclosure-footer {
+    text-align: center; /* Center align footer content */
+    margin-top: 30px; /* Space above footer */
+    font-size: 0.9em; /* Smaller font size for footer */
+    color: #777; /* Lighter color for footer text */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .affiliate-disclosure {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .disclosure-header h1 {
+        font-size: 1.5em; /* Smaller font size for the header */
+    }
+
+    .disclosure-content p {
+        font-size: 1em; /* Maintain readability but adjust for smaller screens */
+    }
+
+    .disclosure-footer {
+        font-size: 0.8em; /* Smaller footer text on mobile */
+    }
+}

@@ -1,0 +1,314 @@
+/* MainContent.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: inter, sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem; /* Smaller main title */
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted grid size */
+  gap: 20px;
+}
+
+.post-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-8px);
+}
+
+.post-title {
+  font-size: 1.4rem; /* Slightly smaller post titles */
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.affiliate-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.affiliate-link:hover {
+  text-decoration: underline;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color:#85A947;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.read-more-btn:hover {
+  background-color: #d35400;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination .page-number {
+  font-size: 1rem;
+  color: #333;
+}
+
+.newsletter-section {
+  background-color: green;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 1.8rem; /* Slightly smaller font size for the newsletter heading */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.subscribe-btn:hover {
+  background-color: #005bb5;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.newsletter-section {
+  background-color: #C6E7FF;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px; /* Space between the input and button */
+  width: 100%; /* Ensure the form takes the full width */
+  max-width: 900px; /* Limit max-width to make it look nicer on large screens */
+  margin: 0 auto; /* Center the form */
+}
+
+.newsletter-input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 70%; /* Input takes 70% of the width */
+  max-width: 650px; /* Maximum width for the input */
+}
+
+.subscribe-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%; /* Button takes 30% of the width */
+  max-width: 250px; /* Maximum width for the button */
+}
+
+.subscribe-btn:hover {
+  background-color: #005bb5;
+}
+.search-bar {
+  margin: 20px auto;
+  max-width: 600px; /* Limit search bar width */
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0073e6;
+}
+
+/* Responsive adjustments for search bar */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%; /* Make search bar full-width on smaller screens */
+    padding: 0 10px;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem; /* Smaller title on tablets */
+    margin-bottom: 20px;
+  }
+
+  .post-title {
+    font-size: 1.3rem; /* Slightly smaller post titles on tablets */
+  }
+
+  .post-item {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .post-content {
+    font-size: 0.95rem; /* Slightly smaller content font */
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    margin: 5px 0;
+    padding: 8px 16px;
+  }
+
+  .newsletter-section h2 {
+    font-size: 1.6rem; /* Slightly smaller font for smaller screens */
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    width: 100%; /* Full width for mobile screens */
+    margin-bottom: 10px;
+  }
+
+  .subscribe-btn {
+    width: 100%; /* Full width for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem; /* Even smaller title on mobile */
+  }
+
+  .post-title {
+    font-size: 1.2rem; /* Smaller post titles on mobile */
+  }
+
+  .post-content {
+    font-size: 0.9rem; /* Smaller font for content on mobile */
+  }
+
+  .newsletter-input {
+    font-size: 0.9rem; /* Adjust font size for mobile inputs */
+  }
+
+  .subscribe-btn {
+    font-size: 0.9rem; /* Adjust button font size for mobile */
+  }
+}

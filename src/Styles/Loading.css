@@ -1,0 +1,54 @@
+/* Loading Component Styles */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #D17A00; /* Spinner color */
+    border-radius: 50%;
+    width: 60px; /* Spinner size */
+    height: 60px;
+    animation: spin 1s linear infinite; /* Spinning animation */
+    margin-bottom: 20px; /* Space below spinner */
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Space above and below icons */
+}
+
+.icon {
+    font-size: 24px; /* Icon size */
+    color: #D17A00; /* Icon color */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+p {
+    font-size: 1.2rem; /* Loading text size */
+    color: #555; /* Slightly darker text color */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
